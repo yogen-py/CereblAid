@@ -1,0 +1,8 @@
+flask==2.3.3
+psutil==5.9.5
+gunicorn==21.2.0
+pyserial==3.5
+
+mediapipe~=0.10.21
+pillow~=11.2.1
+PyAutoGUI~=0.9.54

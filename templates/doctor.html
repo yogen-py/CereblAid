@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CereblAid - Doctor Dashboard</title>
+    <link rel="stylesheet" href="/static/css/doctor.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="header">
+            <div class="logo-container">
+                <img src="/static/images/cereblaid_logo.jpg" onerror="this.src='/static/images/cereblaid_logo.svg'" alt="CereblAid Logo" class="logo">
+                <h1>CereblAid Doctor Dashboard</h1>
+            </div>
+            <div class="header-right">
+                <span id="doctor-name"></span>
+                <button id="logout-btn">Logout</button>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="sidebar">
+                <h2>Patients</h2>
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="Search patients...">
+                </div>
+                <ul class="patient-list" id="patient-list">
+                    <!-- Patient list will be populated here -->
+                </ul>
+            </div>
+            <div class="patient-details">
+                <div class="placeholder-message">Select a patient to view details.</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/doctor.js"></script>
+</body>
+</html>

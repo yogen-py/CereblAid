@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CereblAid - Login</title>
+    <link rel="stylesheet" href="/static/css/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="/static/images/cereblaid_logo.jpg" onerror="this.src='/static/images/cereblaid_logo.svg'" alt="CereblAid Logo" class="logo">
+            <h1 class="title">CereblAid</h1>
+        </div>
+        
+        <div class="auth-container">
+            <div class="tabs">
+                <button class="tab active" id="login-tab">Sign In</button>
+                <button class="tab" id="register-tab">Sign Up</button>
+            </div>
+            
+            <div class="role-selector">
+                <button class="role-btn active" id="patient-role">Patient</button>
+                <button class="role-btn" id="doctor-role">Doctor</button>
+            </div>
+            
+            <div id="login-form" class="form-container active">
+                <form id="signin-form">
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign In</button>
+                </form>
+            </div>
+            
+            <div id="register-form" class="form-container">
+                <form id="signup-form">
+                    <div class="form-group">
+                        <label for="register-name">Full Name</label>
+                        <input type="text" id="register-name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-email">Email</label>
+                        <input type="email" id="register-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">Password</label>
+                        <input type="password" id="register-password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-confirm">Confirm Password</label>
+                        <input type="password" id="register-confirm" name="confirm" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/login.js"></script>
+</body>
+</html>

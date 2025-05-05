@@ -1,0 +1,94 @@
+/* static/css/landing.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.landing-container {
+    background-color: #ffffff;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+.logo {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #1a67b2; /* Theme color */
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+p {
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+.role-selection h2 {
+    margin-bottom: 20px;
+    color: #444;
+    font-weight: 500;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 15px; /* Space between buttons */
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.btn-patient {
+    background-color: #25b7c0; /* Teal color */
+}
+
+.btn-patient:hover {
+    background-color: #1f9aa3;
+}
+
+.btn-doctor {
+    background-color: #1a67b2; /* Blue color */
+}
+
+.btn-doctor:hover {
+    background-color: #155091;
+}
+
+@media (min-width: 600px) {
+    .button-group {
+        flex-direction: row; /* Side-by-side on larger screens */
+        justify-content: center; /* Center buttons horizontally */
+    }
+    .btn {
+        width: auto; /* Allow buttons to size naturally */
+    }
+}
